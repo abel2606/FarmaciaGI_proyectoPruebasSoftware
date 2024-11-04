@@ -16,7 +16,7 @@ public class ControlGestorVentasTest {
     }
 
     @Test
-    public void RegistrarVenta_StockSuficiente_ActualizaInventario() throws Exception {
+    public void RegistrarVenta_EnBaseDeDatos_Exitoso() throws Exception {
 
         // Arrange
         List<ProductoDTO> productosDTO = new ArrayList<>();
