@@ -2,10 +2,10 @@ package org.itson.disenosoftware.farmaciagi_subsistema_proveedores;
 
 import java.util.List;
 import org.itson.disenosoftware.farmaciagi_dtos.ProveedorDTO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.IProveedorBO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.ProveedorBO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.excepciones.ObjetosNegocioException;
 import org.itson.disenosoftware.farmaciagi_subsistema_proveedores.excepciones.ControlProveedoresException;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.IProveedorBO;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.ProveedorBO;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.excepciones.ObjetosNegocioException;
 
 public class ControlGestorProveedores {
     private IProveedorBO proveedor;

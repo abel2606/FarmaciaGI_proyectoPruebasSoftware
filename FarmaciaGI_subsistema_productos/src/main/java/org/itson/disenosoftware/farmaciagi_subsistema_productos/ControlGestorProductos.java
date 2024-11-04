@@ -1,13 +1,12 @@
 package org.itson.disenosoftware.farmaciagi_subsistema_productos;
 
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.itson.disenosoftware.farmaciagi_dtos.ProductoDTO;
 import org.itson.disenosoftware.farmaciagi_dtos.ProveedorDTO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.ProductoBO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.excepciones.ObjetosNegocioException;
 import org.itson.disenosoftware.farmaciagi_subsistema_productos.excepciones.ControlProductosException;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.ProductoBO;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.excepciones.ObjetosNegocioException;
+import org.itson.disenosoftware.farmaciagi_subsistema_productos.excepciones.GestorProductosException;
 
 class ControlGestorProductos {
 

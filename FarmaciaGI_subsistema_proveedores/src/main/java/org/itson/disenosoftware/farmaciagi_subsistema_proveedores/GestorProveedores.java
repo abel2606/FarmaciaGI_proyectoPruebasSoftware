@@ -1,8 +1,6 @@
 package org.itson.disenosoftware.farmaciagi_subsistema_proveedores;
 
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.itson.disenosoftware.farmaciagi_dtos.ProveedorDTO;
 import org.itson.disenosoftware.farmaciagi_subsistema_proveedores.excepciones.ControlProveedoresException;
 import org.itson.disenosoftware.farmaciagi_subsistema_proveedores.excepciones.GestorProveedoresException;

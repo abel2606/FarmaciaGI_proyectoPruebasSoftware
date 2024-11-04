@@ -2,10 +2,10 @@ package org.itson.disenosoftware.farmaciagi_subsistema_promociones;
 
 import java.util.List;
 import org.itson.disenosoftware.farmaciagi_dtos.PromocionDTO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.IPromocionBO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.PromocionBO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.excepciones.ObjetosNegocioException;
 import org.itson.disenosoftware.farmaciagi_subsistema_promociones.excepciones.SubsistemaPromocionesException;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.IPromocionBO;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.PromocionBO;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.excepciones.ObjetosNegocioException;
 
 public class ControlGestorPromociones {
     
