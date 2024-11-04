@@ -7,9 +7,9 @@ import java.util.logging.Logger;
 import org.itson.disenosoftware.farmaciagi_dtos.DireccionDTO;
 import org.itson.disenosoftware.farmaciagi_dtos.ProductoDTO;
 import org.itson.disenosoftware.farmaciagi_dtos.ProveedorDTO;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.ProductoBO;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.ProveedorBO;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.excepciones.ObjetosNegocioException;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.ProductoBO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.ProveedorBO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.excepciones.ObjetosNegocioException;
 
 public class pruebaBO {
 
