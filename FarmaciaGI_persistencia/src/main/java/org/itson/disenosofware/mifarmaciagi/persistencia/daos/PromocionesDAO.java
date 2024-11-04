@@ -1,4 +1,4 @@
-package org.itson.diseniosofware.mifarmaciagi.persistencia.daos;
+package org.itson.disenosofware.mifarmaciagi.persistencia.daos;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -6,9 +6,9 @@ import static com.mongodb.client.model.Filters.eq;
 import java.util.LinkedList;
 import java.util.List;
 import org.bson.Document;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.Conexion.IConexion;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.Exception.PersistenciaException;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.entidades.Promocion;
+import org.itson.disenosofware.mifarmaciagi.persistencia.Conexion.IConexion;
+import org.itson.disenosofware.mifarmaciagi.persistencia.Exception.PersistenciaException;
+import org.itson.disenosofware.mifarmaciagi.persistencia.entidades.Promocion;
 
 public class PromocionesDAO implements IPromocionesDAO {
 

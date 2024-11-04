@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
-package org.itson.diseniosofware.mifarmaciagi.persistencia.daos;
+package org.itson.disenosofware.mifarmaciagi.persistencia.daos;
 
 import java.util.List;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.Exception.PersistenciaException;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.entidades.Compra;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.entidades.Producto;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.entidades.Proveedor;
+import org.itson.disenosofware.mifarmaciagi.persistencia.Exception.PersistenciaException;
+import org.itson.disenosofware.mifarmaciagi.persistencia.entidades.Compra;
+import org.itson.disenosofware.mifarmaciagi.persistencia.entidades.Producto;
+import org.itson.disenosofware.mifarmaciagi.persistencia.entidades.Proveedor;
 
 /**
  *

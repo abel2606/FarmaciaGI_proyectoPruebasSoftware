@@ -1,4 +1,4 @@
-package org.itson.diseniosofware.mifarmaciagi.persistencia.Conexion;
+package org.itson.disenosofware.mifarmaciagi.persistencia.Conexion;
 
 import com.mongodb.client.MongoDatabase;
 

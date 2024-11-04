@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package org.itson.diseniosofware.mifarmaciagi.persistencia.daos;
+package org.itson.disenosofware.mifarmaciagi.persistencia.daos;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -12,11 +12,11 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import org.bson.types.ObjectId;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.Conexion.IConexion;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.Exception.PersistenciaException;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.entidades.Compra;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.entidades.Producto;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.entidades.Proveedor;
+import org.itson.disenosofware.mifarmaciagi.persistencia.Conexion.IConexion;
+import org.itson.disenosofware.mifarmaciagi.persistencia.Exception.PersistenciaException;
+import org.itson.disenosofware.mifarmaciagi.persistencia.entidades.Compra;
+import org.itson.disenosofware.mifarmaciagi.persistencia.entidades.Producto;
+import org.itson.disenosofware.mifarmaciagi.persistencia.entidades.Proveedor;
 
 /**
  * Clase DAO para compras, esta clase esta encargada de la gestion y conexión

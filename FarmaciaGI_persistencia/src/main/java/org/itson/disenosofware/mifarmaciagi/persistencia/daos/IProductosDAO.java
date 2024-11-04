@@ -1,10 +1,10 @@
-package org.itson.diseniosofware.mifarmaciagi.persistencia.daos;
+package org.itson.disenosofware.mifarmaciagi.persistencia.daos;
 
 import java.util.List;
 import org.bson.types.ObjectId;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.Exception.PersistenciaException;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.entidades.Producto;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.entidades.Proveedor;
+import org.itson.disenosofware.mifarmaciagi.persistencia.Exception.PersistenciaException;
+import org.itson.disenosofware.mifarmaciagi.persistencia.entidades.Producto;
+import org.itson.disenosofware.mifarmaciagi.persistencia.entidades.Proveedor;
 
 public interface IProductosDAO {
 

@@ -1,4 +1,4 @@
-package org.itson.diseniosofware.mifarmaciagi.persistencia.daos;
+package org.itson.disenosofware.mifarmaciagi.persistencia.daos;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -9,9 +9,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.bson.Document;
 import org.bson.conversions.Bson;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.Conexion.IConexion;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.Exception.PersistenciaException;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.entidades.Proveedor;
+import org.itson.disenosofware.mifarmaciagi.persistencia.Conexion.IConexion;
+import org.itson.disenosofware.mifarmaciagi.persistencia.Exception.PersistenciaException;
+import org.itson.disenosofware.mifarmaciagi.persistencia.entidades.Proveedor;
 
 public class ProveedoresDAO implements IProveedoresDAO {
 

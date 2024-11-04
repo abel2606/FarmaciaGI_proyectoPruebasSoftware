@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.Conexion.Conexion;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.Conexion.IConexion;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.Exception.PersistenciaException;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.daos.IProductosDAO;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.daos.IProveedoresDAO;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.daos.ProductosDAO;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.daos.ProveedoresDAO;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.entidades.Direccion;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.entidades.Producto;
-import org.itson.diseniosofware.mifarmaciagi.persistencia.entidades.Proveedor;
+import org.itson.disenosofware.mifarmaciagi.persistencia.Conexion.Conexion;
+import org.itson.disenosofware.mifarmaciagi.persistencia.Conexion.IConexion;
+import org.itson.disenosofware.mifarmaciagi.persistencia.Exception.PersistenciaException;
+import org.itson.disenosofware.mifarmaciagi.persistencia.daos.IProductosDAO;
+import org.itson.disenosofware.mifarmaciagi.persistencia.daos.IProveedoresDAO;
+import org.itson.disenosofware.mifarmaciagi.persistencia.daos.ProductosDAO;
+import org.itson.disenosofware.mifarmaciagi.persistencia.daos.ProveedoresDAO;
+import org.itson.disenosofware.mifarmaciagi.persistencia.entidades.Direccion;
+import org.itson.disenosofware.mifarmaciagi.persistencia.entidades.Producto;
+import org.itson.disenosofware.mifarmaciagi.persistencia.entidades.Proveedor;
 
 public class pruebas {
 

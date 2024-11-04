@@ -1,4 +1,4 @@
-package org.itson.diseniosofware.mifarmaciagi.persistencia.entidades;
+package org.itson.disenosofware.mifarmaciagi.persistencia.entidades;
 
 import java.time.Instant;
 import java.util.List;
