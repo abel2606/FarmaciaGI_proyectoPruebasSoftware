@@ -1,0 +1,14 @@
+/FarmaciaGI/target/
+/FarmaciaGIDominio/target/
+/FarmaciaGIPersistencia/target/
+/FarmaciaGI_subsistema_productos/target/
+/FarmaciaGI_subsistema_ventas/target/
+/FarmaciaGI_dtos/target/
+/FarmaciaGI_presentacion/target/
+/FarmaciaGI_simulacionBD/target/
+/FarmaciaGI_dominio/target/
+/FarmaciaGI_objetosNegocio/target/
+/FarmaciaGI_persistencia/target/
+/FarmaciaGI_subsistema_promociones/target/
+/FarmaciaGI_subsistema_proveedores/target/
+/FarmaciaGI_subsistema_compra/target/
