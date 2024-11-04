@@ -9,9 +9,9 @@ import java.util.List;
 import org.itson.disenosoftware.farmaciagi_dtos.CompraDTO;
 import org.itson.disenosoftware.farmaciagi_dtos.ProductoDTO;
 import org.itson.disenosoftware.farmaciagi_dtos.ProveedorDTO;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.CompraBO;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.ICompraBO;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.excepciones.ObjetosNegocioException;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.CompraBO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.ICompraBO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.excepciones.ObjetosNegocioException;
 
 /**
  * Clase control para el registro de compras.

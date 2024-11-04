@@ -1,11 +1,11 @@
 package org.itson.disenosoftware.farmaciagi_subsistema_ventas;
 
 import org.itson.disenosoftware.farmaciagi_dtos.VentaDTO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.IVentaBO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.VentaBO;
+import org.itson.disenosoftware.farmaciagi_objetosNegocio.excepciones.ObjetosNegocioException;
 import org.itson.disenosoftware.farmaciagi_subsistema_ventas.excepciones.ControlVentasException;
 import org.itson.disenosoftware.farmaciagi_subsistema_ventas.excepciones.GestorVentasException;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.IVentaBO;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.VentaBO;
-import org.itson.diseñosoftware.farmaciagi_objetosNegocio.excepciones.ObjetosNegocioException;
 
 class ControlGestorVentas {
     
