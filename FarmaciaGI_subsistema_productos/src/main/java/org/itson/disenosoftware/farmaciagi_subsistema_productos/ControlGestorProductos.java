@@ -10,6 +10,7 @@ import org.itson.disenosoftware.farmaciagi_subsistema_productos.excepciones.Gest
 
 class ControlGestorProductos {
 
+    
     private ProductoBO producto;
 
     /**
