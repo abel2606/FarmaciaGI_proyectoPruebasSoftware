@@ -43,5 +43,34 @@ public class ControlGestorVentasTest {
         // Assert
         assertEquals("321", ventaDTO.getCodigo());
     }
+    
+     @Test
+    public void RegistrarVenta_NoRegistrarEnBD_Fallido() throws Exception {
+
+        // Arrange
+        List<ProductoDTO> productosDTO = new ArrayList<>();
+        ProductoDTO productoDTO = new ProductoDTO(
+                "12345", 
+                "Paracetamol", 
+                200.5f, 
+                "pfizer", 
+                0);
+        productosDTO.add(productoDTO);
+        List<PromocionDTO> promocionesDTO = new ArrayList<>();
+        VentaDTO ventaDTO = new VentaDTO(
+                "321", 
+                productosDTO, 
+                promocionesDTO, 
+                200.5F, 
+                Calendar.getInstance());
+        GestorVentas gestorVentas = new GestorVentas();
+        
+
+        // Act
+        gestorVentas.registrarVenta(ventaDTO);
+
+        // Assert
+        assertEquals("321", ventaDTO.getCodigo());
+    }
 
 }
