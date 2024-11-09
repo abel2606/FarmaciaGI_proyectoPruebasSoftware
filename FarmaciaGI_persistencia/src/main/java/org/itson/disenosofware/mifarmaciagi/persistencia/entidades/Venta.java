@@ -17,6 +17,16 @@ public class Venta {
     public Venta() {
     }
 
+    public Venta(String codigo, List<Producto> productos, List<Promocion> promociones, Float costo_total, Instant fecha) {
+        this.codigo = codigo;
+        this.productos = productos;
+        this.promociones = promociones;
+        this.costo_total = costo_total;
+        this.fecha = fecha;
+    }
+    
+    
+
     /**
      * Obtiene el código d la venta
      *

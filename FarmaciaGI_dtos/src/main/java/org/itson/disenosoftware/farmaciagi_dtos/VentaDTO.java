@@ -95,6 +95,8 @@ public class VentaDTO {
     public void setPromociones(List<PromocionDTO> promociones) {
         this.promociones = promociones;
     }
+    
+    
 
     /**
      * Permite obtener el total de la venta.
