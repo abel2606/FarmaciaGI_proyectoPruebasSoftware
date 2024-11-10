@@ -51,7 +51,7 @@ public class VentasDAO implements IVentasDAO {
 
         Venta ventaEncontrada;
 
-        ventaEncontrada = collection.find(eq("codigo_venta", codigo)).first();
+        ventaEncontrada = collection.find(eq("codigoVenta", codigo)).first();
 
         if (ventaEncontrada == null) {
             return null;

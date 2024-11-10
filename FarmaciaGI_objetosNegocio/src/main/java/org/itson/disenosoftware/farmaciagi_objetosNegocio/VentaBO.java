@@ -88,7 +88,7 @@ public class VentaBO implements IVentaBO{
      * @param productosDTO La lista de Producto DTO
      * @return La lista de Producto POJO
      */
-    private List<Producto> productosDTOAProductosPOJO(List<ProductoDTO> productosDTO) {
+    List<Producto> productosDTOAProductosPOJO(List<ProductoDTO> productosDTO) {
 
         List<Producto> productos = new LinkedList<>();
 
@@ -125,4 +125,9 @@ public class VentaBO implements IVentaBO{
         }
         return promociones;
     }
+    
+    
+    
+   
+  
 }
