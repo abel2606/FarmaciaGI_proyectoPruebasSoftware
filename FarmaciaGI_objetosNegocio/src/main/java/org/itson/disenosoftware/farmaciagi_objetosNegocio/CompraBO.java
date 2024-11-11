@@ -139,7 +139,7 @@ public class CompraBO implements ICompraBO{
      *
      * @return código generado
      */
-    private String generarCodigoCompra() {
+    public String generarCodigoCompra() {
         Random random = new Random();
         StringBuilder codigo = new StringBuilder();
         for (int i = 0; i < 7; i++) {
@@ -155,7 +155,7 @@ public class CompraBO implements ICompraBO{
      * @param productosDTO La lista de Producto DTO
      * @return La lista de Producto POJO
      */
-    private List<Producto> productosDTOAProductosPOJO(List<ProductoDTO> productosDTO) {
+    public List<Producto> productosDTOAProductosPOJO(List<ProductoDTO> productosDTO) {
 
         List<Producto> productos = new LinkedList<>();
 
@@ -177,7 +177,7 @@ public class CompraBO implements ICompraBO{
      * @param proveedoresDTO La lista de Proveedor DTO
      * @return La lista de Proveedor POJO
      */
-    private List<Proveedor> proveedoresDTOAProveedoresPOJO(List<ProveedorDTO> proveedoresDTO) {
+    public List<Proveedor> proveedoresDTOAProveedoresPOJO(List<ProveedorDTO> proveedoresDTO) {
 
         List<Proveedor> proveedores = new LinkedList<>();
 
@@ -207,7 +207,7 @@ public class CompraBO implements ICompraBO{
      * @param codigo código de venta
      * @return venta que se encuentra
      */
-    private Compra encontrarCompra(String codigo) {
+    public Compra encontrarCompra(String codigo) {
         Compra compra = comprasDAO.encontrarCompra(codigo);
         return compra;
     }
