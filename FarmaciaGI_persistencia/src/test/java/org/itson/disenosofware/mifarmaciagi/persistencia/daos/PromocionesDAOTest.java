@@ -24,9 +24,9 @@ public class PromocionesDAOTest {
 
     @Mock
     private IPromocionesDAO promocionesDAO;
-    
+
     @Test
-    public void ObtenerPromocion_PromocionExistente_ReturnSuccess() {
+    public void ObtenerPromocion_PromocionExistente_ObtienePromocion() {
         //arrange
         Promocion promocionBuscada = new Promocion("PRO-001", "Paracetamol 2x1", new Producto("Paracetamol", 20.0f, "PAR-001"), 2, 10.0f);
         when(promocionesDAO.obtenerPromocion(new Promocion("PRO-001"))).thenReturn(promocionBuscada);
@@ -40,7 +40,7 @@ public class PromocionesDAOTest {
     }
 
     @Test
-    public void ObtenerPromocion_PromocionInexistente_ReturnNull() {
+    public void ObtenerPromocion_PromocionInexistente_ObtieneNulo() {
         //arrange
         when(promocionesDAO.obtenerPromocion(new Promocion("PRO-002"))).thenReturn(null);
         Promocion resultado;
@@ -55,7 +55,7 @@ public class PromocionesDAOTest {
     @Test
     public void RegistrarPromocion_PromocionNueva_PromocionRegistrada() throws Exception {
         //arrange
-        Promocion promocionNueva = new Promocion("PRO-005", "Omeprazol 2X1", new Producto("Omeprazol", 35.0f, "OME-011"), 2, 17.5f);
+        Promocion promocionNueva = new Promocion("PRO-005", "Omeprazol 2x1", new Producto("Omeprazol", 35.0f, "OME-011"), 2, 17.5f);
         doNothing().when(promocionesDAO).registrarPromocion(promocionNueva);
 
         //act
@@ -66,9 +66,9 @@ public class PromocionesDAOTest {
     }
 
     @Test
-    public void RegistrarPromocion_PromocionExistente_ThrowException() throws Exception {
+    public void RegistrarPromocion_PromocionExistente_LanzaExcepcion() throws Exception {
         //arrange
-        Promocion promocionNueva = new Promocion("PRO-001", "Paracetamol 2X1", new Producto("Paracetamol", 20.0f, "PAR-001"), 2, 10.0f);
+        Promocion promocionNueva = new Promocion("PRO-001", "Paracetamol 2x1", new Producto("Paracetamol", 20.0f, "PAR-001"), 2, 10.0f);
         doThrow(new PersistenciaException("Error")).when(promocionesDAO).registrarPromocion(promocionNueva);
         PersistenciaException e = null;
 
@@ -86,7 +86,7 @@ public class PromocionesDAOTest {
     @Test
     public void ActualizarPromocion_PromocionExistente_PromocionActualizada() throws Exception {
         //arrange
-        Promocion promocionActualida = new Promocion("PRO-005", "Omeprazol 3X2", new Producto("Omeprazol", 35.0f, "OME-011"), 3, 23.3333f);
+        Promocion promocionActualida = new Promocion("PRO-005", "Omeprazol 3x2", new Producto("Omeprazol", 35.0f, "OME-011"), 3, 23.3333f);
         doNothing().when(promocionesDAO).actualizarPromocion(promocionActualida);
 
         //act
@@ -97,9 +97,9 @@ public class PromocionesDAOTest {
     }
 
     @Test
-    public void ActualizarPromocion_PromocionInexistente_ThrowException() throws Exception {
+    public void ActualizarPromocion_PromocionInexistente_LanzaExcepcion() throws Exception {
         //arrange
-        Promocion promocionActualizada = new Promocion("PRO-101", "Aspirina 2X1", new Producto("Aspirina", 30.0f, "ASP-001"), 2, 15.0f);
+        Promocion promocionActualizada = new Promocion("PRO-101", "Aspirina 2x1", new Producto("Aspirina", 30.0f, "ASP-001"), 2, 15.0f);
         doThrow(new PersistenciaException("Error")).when(promocionesDAO).actualizarPromocion(promocionActualizada);
         PersistenciaException e = null;
 
@@ -126,9 +126,9 @@ public class PromocionesDAOTest {
         //assert
         verify(promocionesDAO, Mockito.times(1)).eliminarPromocion(promocionEliminar);
     }
-    
+
     @Test
-    public void EliminarPromocion_PromocionInexistente_ThrowException() throws Exception {
+    public void EliminarPromocion_PromocionInexistente_LanzaExcepcion() throws Exception {
         //arrange
         Promocion promocionEliminar = new Promocion("PRO-023");
         doThrow(PersistenciaException.class).when(promocionesDAO).eliminarPromocion(promocionEliminar);
@@ -140,18 +140,15 @@ public class PromocionesDAOTest {
         } catch (PersistenciaException ex) {
             e = ex;
         }
-        
+
         //assert
         assertNotNull(e);
     }
 
-    /**
-     * Test of obtenerPromociones method, of class PromocionesDAO.
-     */
     @Test
-    public void ObtenerPromociones_ListaPromociones_ListaLlena() {
+    public void ObtenerPromociones_PromocionesExistentes_ListaLlena() {
         //arrange
-        List<Promocion> promociones = List.of(new Promocion("PRO-002"), new Promocion("PRO-002"), new Promocion("PRO-003"));
+        List<Promocion> promociones = List.of(new Promocion("PRO-001"), new Promocion("PRO-002"), new Promocion("PRO-003"));
         when(promocionesDAO.obtenerPromociones()).thenReturn(promociones);
         List<Promocion> resultado;
 
@@ -159,12 +156,15 @@ public class PromocionesDAOTest {
         resultado = promocionesDAO.obtenerPromociones();
 
         //assert
-        assertEquals(promociones, resultado);
         assertEquals(promociones.size(), resultado.size());
+        assertEquals(promociones.get(0).getCodigo(), resultado.get(0).getCodigo());
+        assertEquals(promociones.get(1).getCodigo(), resultado.get(1).getCodigo());
+        assertEquals(promociones.get(2).getCodigo(), resultado.get(2).getCodigo());
+        verify(promocionesDAO, times(1)).obtenerPromociones();
     }
-    
+
     @Test
-    public void ObtenerPromociones_ListaPromociones_ListaVacía() {
+    public void ObtenerPromociones_PromocionesInexistentes_ListaVacia() {
         //arrange
         List<Promocion> promociones = new LinkedList<>();
         when(promocionesDAO.obtenerPromociones()).thenReturn(promociones);
@@ -174,8 +174,9 @@ public class PromocionesDAOTest {
         resultado = promocionesDAO.obtenerPromociones();
 
         //assert
-        assertEquals(promociones, resultado);
+        assertNotNull(resultado);
         assertEquals(promociones.size(), resultado.size());
+        verify(promocionesDAO, times(1)).obtenerPromociones();
     }
 
 }
