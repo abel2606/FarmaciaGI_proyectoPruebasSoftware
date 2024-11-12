@@ -22,7 +22,8 @@ public class IGestorPromocionesTest {
     @Test
     public void ObtenerPromocion_PromocionExistente_PromocionObtenida() {
         //arrange
-        PromocionDTO promocionBuscada = new PromocionDTO("PRO-001", "Paracetamol 2x1", new ProductoDTO("PAR-001", "Paracetamol", 20.0f), 2, 10.0f);
+        PromocionDTO promocionBuscada = new PromocionDTO("PRO-001", "Paracetamol 2x1", 
+                new ProductoDTO("PAR-001", "Paracetamol", 20.0f), 2, 10.0f);
         PromocionDTO resultado;
         
         //act

@@ -90,8 +90,10 @@ public class PromocionBOTest {
     @Test
     public void ActualizarPromocion_PromocionExistente_PromocionActualizada() throws Exception {
         //arrange
-        Promocion promocion = new Promocion("PRO-001", "Paracetamol -$5.00", new Producto("Paracetamol", 20.0f, "PAR-001"), 1, 15.0f);
-        PromocionDTO promocionActualizada = new PromocionDTO("PRO-001", "Paracetamol -$5.00", new ProductoDTO("PAR-001", "Paracetamol", 20.0f), 1, 15.0f);
+        Promocion promocion = new Promocion("PRO-001", "Paracetamol -$5.00", 
+                new Producto("Paracetamol", 20.0f, "PAR-001"), 1, 15.0f);
+        PromocionDTO promocionActualizada = new PromocionDTO("PRO-001", "Paracetamol -$5.00",
+                new ProductoDTO("PAR-001", "Paracetamol", 20.0f), 1, 15.0f);
         when(promocionesDAO.obtenerPromocion(promocion)).thenReturn(promocion);
         doNothing().when(promocionesDAO).actualizarPromocion(promocion);
 
@@ -105,7 +107,8 @@ public class PromocionBOTest {
     @Test
     public void ActualizarPromocion_PromocionInxistente_LanzaExcepcion() throws Exception {
         //arrange
-        PromocionDTO promocionActualizada = new PromocionDTO("PRO-001", "Paracetamol -$5.00", new ProductoDTO("PAR-001", "Paracetamol", 20.0f), 1, 15.0f);
+        PromocionDTO promocionActualizada = new PromocionDTO("PRO-001", "Paracetamol -$5.00", 
+                new ProductoDTO("PAR-001", "Paracetamol", 20.0f), 1, 15.0f);
         when(promocionesDAO.obtenerPromocion(new Promocion("PRO-001"))).thenReturn(null);
 
         //act & assert
